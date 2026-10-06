@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Free Word Counter – Count Words, Characters & Sentences</title>
+
+    <meta name="description"
+        content="Free online word counter to instantly count words, characters, sentences and paragraphs. Check reading time and speaking time directly in your browser.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <span class="logo-icon">W</span>
+            <span>Word Counter</span>
+        </div>
+
+        <nav>
+            <a href="#counter">Word Counter</a>
+            <a href="#about">About</a>
+            <a href="#privacy">Privacy</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+            <h1>Free Online Word Counter</h1>
+
+            <p>
+                Count words, characters, sentences and paragraphs instantly.
+            </p>
+
+            <div class="privacy-badge">
+                🔒 Your text stays private in your browser
+            </div>
+        </section>
+
+
+        <section id="counter" class="counter-container">
+
+            <div class="stats">
+
+                <div class="stat-card">
+                    <span id="wordCount">0</span>
+                    <p>Words</p>
+                </div>
+
+                <div class="stat-card">
+                    <span id="characterCount">0</span>
+                    <p>Characters</p>
+                </div>
+
+                <div class="stat-card">
+                    <span id="sentenceCount">0</span>
+                    <p>Sentences</p>
+                </div>
+
+                <div class="stat-card">
+                    <span id="paragraphCount">0</span>
+                    <p>Paragraphs</p>
+                </div>
+
+            </div>
+
+
+            <textarea
+                id="textInput"
+                placeholder="Start typing or paste your text here..."
+            ></textarea>
+
+
+            <div class="actions">
+
+                <button id="copyButton">
+                    Copy Text
+                </button>
+
+                <button id="clearButton">
+                    Clear Text
+                </button>
+
+            </div>
+
+
+            <div class="extra-stats">
+
+                <div>
+                    <span id="readingTime">0 min</span>
+                    <p>Reading Time</p>
+                </div>
+
+                <div>
+                    <span id="speakingTime">0 min</span>
+                    <p>Speaking Time</p>
+                </div>
+
+                <div>
+                    <span id="charactersNoSpaces">0</span>
+                    <p>Characters without spaces</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="upload-section">
+
+            <h2>Count Words From a Document</h2>
+
+            <p>
+                Upload a PDF, Word document or text file.
+            </p>
+
+            <div class="upload-box">
+
+                <input
+                    type="file"
+                    id="fileInput"
+                    accept=".pdf,.docx,.txt"
+                    hidden
+                >
+
+                <label for="fileInput" class="upload-button">
+                    Choose Document
+                </label>
+
+                <p>or drag and drop your document here</p>
+
+                <small>
+                    PDF, DOCX and TXT
+                </small>
+
+                <div id="fileStatus" class="file-status"></div>
+
+            </div>
+
+            <p class="file-privacy">
+                🔒 Documents are processed in your browser and are not stored on our servers.
+            </p>
+
+        </section>
+
+
+        <section id="about" class="info-section">
+
+            <h2>About Our Word Counter</h2>
+
+            <p>
+                This free online word counter helps you quickly calculate
+                the number of words, characters, sentences and paragraphs
+                in your writing.
+            </p>
+
+        </section>
+
+
+        <section id="privacy" class="info-section">
+
+            <h2>Your Privacy</h2>
+
+            <p>
+                Your text is processed directly inside your browser.
+                We do not need to store the text you enter into the word counter.
+            </p>
+
+        </section>
+
+        <!-- HOW TO USE -->
+<section id="how-to-use" class="info-section">
+    <h2>How to Use the Word Counter</h2>
+
+    <p>
+        Using our free online word counter is simple. Type or paste your text
+        into the text box and your word count, character count, sentence count
+        and paragraph count will update automatically.
+    </p>
+
+    <p>
+        You can also upload a PDF, DOCX or TXT document to count the words
+        directly from your file.
+    </p>
+</section>
+
+<!-- FEATURES -->
+<section class="info-section">
+    <h2>What Does the Word Counter Calculate?</h2>
+
+    <p>
+        The word counter analyzes your text and displays the total number of
+        words, characters, sentences and paragraphs. It also estimates reading
+        time and speaking time and shows the number of characters without spaces.
+    </p>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="info-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <h3>Is this word counter free?</h3>
+    <p>
+        Yes. This online word counter is free to use and does not require an account.
+    </p>
+
+    <h3>Can I count characters as well as words?</h3>
+    <p>
+        Yes. The tool counts both characters and words, including a separate
+        character count without spaces.
+    </p>
+
+    <h3>Can I upload a document?</h3>
+    <p>
+        Yes. You can upload PDF, DOCX and TXT files and the tool will extract
+        the text for counting.
+    </p>
+
+    <h3>Is my text stored?</h3>
+    <p>
+        No. Your text is processed directly in your browser and is not uploaded
+        to our server.
+    </p>
+</section>
+
+    </main>
+
+
+   <footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="#counter">Word Counter</a>
+            <a href="#how-to-use">How to Use</a>
+            <a href="#about">About</a>
+            <a href="#privacy">Privacy</a>
+            <a href="#faq">FAQ</a>
+        </div>
+
+        <p>© 2026 Word Counter</p>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mammoth@1.10.0/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
